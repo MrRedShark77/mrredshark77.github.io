@@ -93,13 +93,14 @@ const GAMES = {
             type: "prototype",
             link: "https://mrredshark77.github.io/the-uninfinity-respecced/",
         },
-    },
-    tba: {
         ri: {
             id: 'ri',
             title: "Replicanti Incremental",
-            type: "tba",
+            type: "prototype",
+            link: "https://mrredshark77.github.io/Replicanti-Incremental/",
         },
+    },
+    tba: {
         imr: {
             id: 'imr',
             title: "Incremental Merge v1.0 Rewritten",
