@@ -53,6 +53,12 @@ const GAMES = {
             type: "main",
             link: "https://mrredshark77.github.io/the-color-tree/",
         },
+        liq: {
+            id: 'liq',
+            title: "Liquids",
+            type: "main",
+            link: "https://mrredshark77.github.io/Liquids/",
+        },
     },
     mod: {
         di: {
@@ -98,6 +104,12 @@ const GAMES = {
             title: "Replicanti Incremental",
             type: "prototype",
             link: "https://mrredshark77.github.io/Replicanti-Incremental/",
+        },
+        imr: {
+            id: 'imr',
+            title: "Incremental Mass Rewritten",
+            type: "prototype",
+            link: "https://mrredshark77.github.io/incremental-mass-rewritten/",
         },
     },
     tba: {
