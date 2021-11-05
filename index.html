@@ -1,52 +1,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/ExpantaNum.js"></script>
-    <script src="js/saves.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/v.js"></script>
+    <title>MrRedShark77's Homepage</title>
 
-    <title>Title</title>
+    <script src="js/Element.js"></script>
+    <script src="js/contents.js"></script>
+    <script src="js/main.js"></script>
 </head>
-<body onload="loadGame()">
-    <div id='app'>
-        <br><h1>MrRedShark77's Games</h1><br><br>
-        <div class='tab_games'>
-            <h2>Main Games</h2><br>
-            <div class='table_center'>
-                <div v-for="data in GAMES.main" class='game'>
-                    <h3>{{ data.title }}</h3><br><br><br>
-                    <button class='game_button' @click="GAMES.openURL(data.link)">Play</button>
-                </div>
-            </div>
-        </div><br><br><div class='tab_games'>
-            <h2>Modded Games</h2><br>
-            <div class='table_center'>
-                <div v-for="data in GAMES.mod" class='game'>
-                    <h3>{{ data.title }}</h3><br><br><br>
-                    <button class='game_button' @click="GAMES.openURL(data.link)">Play</button>
-                </div>
-            </div>
-        </div><br><br><div class='tab_games'>
-            <h2>Prototype Games</h2><br>
-            <div class='table_center'>
-                <div v-for="data in GAMES.prototype" class='game'>
-                    <h3>{{ data.title }}</h3><br><br><br>
-                    <button class='game_button' @click="GAMES.openURL(data.link)">Play</button>
-                </div>
-            </div>
-        </div><br><br><div class='tab_games'>
-            <h2>TBA Games</h2><br>
-            <div class='table_center'>
-                <div v-for="data in GAMES.tba" class='game'>
-                    <h3>{{ data.title }}</h3>
-                </div>
-            </div>
-        </div><br><br>
+<body onload="loadApp()">
+    <div id="app">
+        <div style="width: 100%; min-height: 50px; background-color: #393968; padding-top: 15px;">
+            <h1>MrRedShark77's Homepage</h1>
+        </div><br><div id="contents" class="table_start"></div>
     </div>
 </body>
 </html>

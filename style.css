@@ -1,46 +1,36 @@
+@font-face {
+	font-family: 'Cousine';
+	src: url('Cousine-Regular.ttf');
+}
+
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Cousine;
     table-align: center;
 	text-align: center;
 }
 
 body {
     color: white;
-    background-color: #77f;
-	overflow-x: hidden;
-	margin: 0px;
-	font-size: 14px;
-}
-
-table, tr {
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    border: solid 3px black;
-    background-color: white;
-    font-size: 14px;
-	cursor: pointer;
-    border-radius: 10px;
+    background-color: #424272;
+    margin: 0;
 }
 
 h1 {
     display: inline;
 	font-weight: normal;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 h2 {
 	display: inline;
 	font-weight: normal;
-    font-size: 35px;
+    font-size: 25px;
 }
 
-h3 {
-	display: inline;
-	font-weight: normal;
-    font-size: 25px;
+.table_start {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
 }
 
 .table_center {
@@ -49,91 +39,38 @@ h3 {
     flex-flow: row wrap;
 }
 
-.tab_games {
-	width: 100%;
-	padding: 20px 0px 20px 0px;
-	background-color: #55f;
+.content {
+    width: 320px;
+    height: 200px;
+    margin: 5px 15px;
+    padding: 5px;
+    border: 2px solid  black;
+    border-radius: 15px;
+    background-color: #393968;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 
-.game {
-	width: 300px;
-	height: 150px;
-	padding: 15px;
-	margin: 15px;
-	border: solid 5px black;
-	background-color: #77f;
+.content:hover {
+    transform: scale(1.08);
 }
 
-.game_button {
-	width: 150px;
-	height: 40px;
-	font-size: 20px;
-	transition-duration: 0.5s;
-}
-.game_button:hover {
-	transform: scale(1.15)
-}
-
-[tooltip] {
-	position: relative;
-	z-index: 2;
-	white-space: pre-wrap;
+.content > div > .title {
+    text-align: left;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background-color: #414179;
 }
 
-[tooltip]:before,
-[tooltip]:after {
-	visibility: hidden;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-	opacity: 0;
-	pointer-events: none;
-	white-space: pre-wrap;
+.content > div > .description {
+    text-align: left;
 }
 
-[tooltip]:before {
-	position: absolute;
-	bottom: 100%;
-	left: 50%;
-	margin-bottom: 5px;
-	margin-left: -80px;
-	padding: 7px;
-	width: 160px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background-color: #000;
-	background-color: hsla(0, 0%, 5%, 0.9);
-	color: #fff;
-	content: attr(tooltip);
-	text-align: center;
-	font-size: 14px;
-	line-height: 1.2;
-	transition-duration: 0.5s;
-	white-space: pre-wrap;
-}
-
-[tooltip]:after {
-	position: absolute;
-	bottom: 100%;
-	left: 50%;
-	margin-left: -5px;
-	width: 0;
-	border-top: 5px solid #000;
-	border-top: 5px solid hsla(0, 0%, 5%, 0.9);
-	border-right: 5px solid transparent;
-	border-left: 5px solid transparent;
-	content: " ";
-	font-size: 0;
-	line-height: 0;
-	transition-duration: 0.5s;
-	white-space: pre-wrap;
-}
-
-[tooltip]:hover:before,
-[tooltip]:hover:after {
-	visibility: visible;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-	opacity: 1;
-	white-space: pre-wrap;
+.content > .category {
+    color: gray;
+    font-size: 15px;
+    width: 100%;
+    text-align: right;
 }
