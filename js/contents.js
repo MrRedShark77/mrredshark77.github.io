@@ -16,6 +16,10 @@ const CONTENTS = [
     },
     */
     {
+        category: "proto",
+        title: "Antimatter Dimensions: Reborn",
+        url: "https://mrredshark77.github.io/antimatter-dimensions-reborn/",
+    },{
         category: "modded",
         title: "Antimatter Dimension NG+Reality",
         url: "https://mrredshark77.github.io/IvarK.github.io/",
