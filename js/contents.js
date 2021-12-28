@@ -22,7 +22,11 @@ const CONTENTS = [
     },{
         category: "modded",
         title: "Antimatter Dimension NG+Reality",
-        url: "https://mrredshark77.github.io/IvarK.github.io/",
+        url: "https://raw.githack.com/mrredshark77/ivark.github.io/master/index.html",
+    },{
+        category: "modded",
+        title: "Antimatter Dimension Post NG+3",
+        url: "https://mrredshark77.github.io/post-ng-3-plus/",
     },{
         category: "modded",
         title: "Distance Incremental Condensed",
