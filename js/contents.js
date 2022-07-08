@@ -64,6 +64,10 @@ const CONTENTS = [
         title: "Replicanti Incremental",
         url: "https://mrredshark77.github.io/Replicanti-Incremental/",
     },{
+        category: "proto",
+        title: "Stone-emental",
+        url: "https://mrredshark77.github.io/Stonemental/",
+    },{
         category: "completed",
         title: "The Balanced Game",
         url: "https://mrredshark77.github.io/The-Balanced-Game/",
