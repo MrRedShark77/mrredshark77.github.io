@@ -40,6 +40,11 @@ const CONTENTS = [
         title: "Electrical Incremental",
         url: "https://mrredshark77.github.io/Electrical-Incremental/",
     },{
+        category: "completed",
+        title: "Endless Dice",
+        description: "First incremental minigame/puzzle in GTMK Jam 2022",
+        url: "https://mrredshark77.github.io/Endless-Dice/",
+    },{
         category: "main",
         title: "Incremental Mass",
         url: "https://mrredshark77.github.io/incremental-mass/",
@@ -59,6 +64,11 @@ const CONTENTS = [
         title: "Liquids",
         description: "First game winner in JAM Summer 2021",
         url: "https://mrredshark77.github.io/Liquids/",
+    },{
+        category: "main",
+        title: "Really Grass Cutting Incremental",
+        description: "The game inspired by Grass Cutting Incremental in Roblox.",
+        url: "https://mrredshark77.github.io/Really-Grass-Cutting-Incremental/",
     },{
         category: "proto",
         title: "Replicanti Incremental",
