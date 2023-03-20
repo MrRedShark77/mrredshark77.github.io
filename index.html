@@ -6,22 +6,39 @@
 
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrollbar.css">
 
     <title>MrRedShark77's Homepage</title>
 
     <script src="js/Element.js"></script>
+    <script src="js/folders.js"></script>
     <script src="js/contents.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body onload="loadApp()">
-    <div id="app">
-        <div style="width: 100%; min-height: 50px; background-color: #393968; padding-top: 15px;">
-            <div>
-                <h1>MrRedShark77's Homepage</h1>
-            </div><div style="position: absolute; top: 10px; right: 10px;">
-                <button style="font-size: 30px; border: solid 2px black; border-radius: 14px; font-weight: bold; background-color: #ffc546; cursor: pointer;" onclick="window.open('https://www.donationalerts.com/r/mrredshark77')">Donate</button>
+    <div id="app" style="display: none; position: relative;">
+        <div class="main-files" id="main_files_table"></div>
+        <div id="folder-div">
+            <div class="folder-title">
+                <span id="folder_title">Folder</span>
+                <button class="btn-primary" onclick="closeFolder()">X</button>
+            </div><div class="folder-table-div">
+                <div id="folder_table">
+
+                </div>
             </div>
-        </div><br><div id="contents" class="table_start"></div>
+        </div>
+        <div id="image-div">
+            <div class="folder-title">
+                <span id="image_title">Folder</span>
+                <button class="btn-primary" onclick="closeImage()">X</button>
+            </div><div class="folder-table-div">
+                <img id="img-selected">
+            </div>
+        </div>
+        <div id="navbar-bottom">
+            <div id="time">12:34</div>
+        </div>
     </div>
 </body>
 </html>

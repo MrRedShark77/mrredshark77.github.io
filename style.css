@@ -1,18 +1,20 @@
 @font-face {
-	font-family: 'Cousine';
-	src: url('Cousine-Regular.ttf');
+	font-family: 'MainFont';
+	src: url('VT323-Regular.ttf');
 }
 
 * {
-	font-family: Cousine;
+	font-family: MainFont;
     table-align: center;
 	text-align: center;
+    user-select: none;
 }
 
 body {
     color: white;
-    background-color: #424272;
+    background-color: #008081;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -27,6 +29,34 @@ h2 {
     font-size: 25px;
 }
 
+img {
+    -webkit-user-drag: none;
+    image-rendering: pixelated;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #c0c0c0;
+    border-color: #a0a0a0;
+
+    position: relative;
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-size: 20px;
+    max-height: 37px;
+}
+
+.btn-primary:hover {
+    color: #000;
+    background-color: #c0c0c0;
+    border-color: #a0a0a0;
+}
+
 .table_start {
     display: flex;
     justify-content: flex-start;
@@ -39,38 +69,151 @@ h2 {
     flex-flow: row wrap;
 }
 
-.content {
-    width: 320px;
-    height: 200px;
-    margin: 5px 15px;
-    padding: 5px;
-    border: 2px solid  black;
-    border-radius: 15px;
-    background-color: #393968;
-    cursor: pointer;
-    transition-duration: 0.5s;
+.main-files {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
 }
 
-.content:hover {
-    transform: scale(1.08);
+.file-div {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid 1px #fff0;
 }
 
-.content > div > .title {
-    text-align: left;
-    font-size: 20px;
-    border-radius: 15px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    background-color: #414179;
+.file-div.selected {
+    background-color: #fff4;
 }
 
-.content > div > .description {
-    text-align: left;
+.file-div:not(.selected):hover {
+    border-color: #fff8;
+    border-style: dotted;
 }
 
-.content > .category {
-    color: gray;
-    font-size: 15px;
+#folder_table > .file-div.selected {
+    background-color: #0004;
+}
+
+#folder_table > .file-div:not(.selected):hover {
+    border-color: #0008;
+    border-style: dotted;
+}
+
+.file-div > img {
+    width: 72px;
+    height: 72px;
+}
+
+.file-div * {
+    pointer-events: none;
+}
+
+.file-name {
     width: 100%;
-    text-align: right;
+    height: calc(100% - 72px);
+    font-size: 16px;
+}
+
+#folder-div {
+    position: absolute;
+    top: 0; left: 0;
+    margin: 110px;
+    padding: 2px;
+    width: calc(100% - 212px);
+    height: calc(100% - 212px);
+    min-height: 600px;
+
+    background-color: #C0C0C0;
+    border: solid 2px;
+    border-color: white #393939 #393939 white;
+    color: black;
+
+    z-index: 1;
+}
+
+.folder-title {
+    position: relative;
+    width: calc(100% - 8px);
+    height: 28px;
+    background-color: #808080;
+    color: #C9C9C9;
+    padding: 2px 4px;
+    margin-bottom: 4px;
+    font-size: 28px;
+    text-align: left;
+}
+
+.folder-title > button {
+    position: absolute;
+    right: 2px;
+    width: 28px;
+}
+
+.folder-table-div {
+    padding: 2px;
+    width: calc(100% - 8px);
+    height: calc(100% - 44px);
+    background-color: white;
+
+    border: solid 2px;
+    border-color:  #393939 white white #393939;
+
+    overflow-y: scroll;
+}
+
+#folder_table {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+#navbar-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+
+    background: #C0C0C0;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-bottom: 2px solid #FCFCFC;
+}
+
+#time {
+    border-top: 1px solid #08080E;
+    border-left: 1px solid #08080E;
+    border-right: 1px solid #FCFCFC;
+    border-bottom: 1px solid #FCFCFC;
+    padding: 5px 15px;
+    font-size: 20px;
+
+    position: absolute;
+
+    bottom: 4px;
+    right: 12px;
+
+    color: black;
+}
+
+#image-div {
+    position: absolute;
+    top: 0; left: 0;
+    margin: 110px;
+    padding: 2px;
+    width: calc(100% - 212px);
+    height: calc(100% - 212px);
+    min-height: 600px;
+
+    background-color: #C0C0C0;
+    border: solid 2px;
+    border-color: white #393939 #393939 white;
+    color: black;
+
+    z-index: 2;
+}
+
+.folder-table-div > img {
+    max-width: 100%;
 }

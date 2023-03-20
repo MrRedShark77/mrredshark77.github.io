@@ -5,21 +5,7 @@ var diff = 0;
 var date = Date.now();
 
 function setupHTML() {
-    let contents = new Element("contents")
-    let table = ""
-    for (let x in CONTENTS) {
-        let c = CONTENTS[x]
-        table += `
-        <div id="content_${x}" class="content" ${c.url?`onclick="window.open('${c.url}')"`:""}>
-            <div style="height: 94%">
-                <div class="title">${c.title}</div>
-                ${c.description?`<div class="description">${c.description}</div>`:""}
-            </div>
-            <div class="category">${CONTENTS_CATEGORY[c.category]}</div>
-        </div>
-        `
-    }
-    contents.setHTML(table)
+    setupMainFilesHTML()
 
     tmp.el = {}
 	let all = document.getElementsByTagName("*")
@@ -37,8 +23,14 @@ function updateTemp() {
 
 }
 
-function updateHTML() {
+function getaf(x) { return x < 10 ? "0"+x : x }
 
+function updateHTML() {
+    let d = new Date()
+
+    let [h,m,s] = [d.getHours(),d.getMinutes(),d.getSeconds()]
+
+    tmp.el.time.setHTML(getaf(h)+":"+getaf(m)+":"+getaf(s))
 }
 
 function loop() {
@@ -51,5 +43,9 @@ function loop() {
 
 function loadApp() {
     setupHTML()
+    updateMainFilesHTML()
+    setTimeout(() => {
+        tmp.el.app.setDisplay(true)
+    }, 100);
     setInterval(loop,50)
 }
