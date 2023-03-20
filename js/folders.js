@@ -129,7 +129,7 @@ const FILES = {
                 img: `https://d.furaffinity.net/art/cinnatree/1421730243/1421647171.cinnatree_shark_surfer_furaffinity.jpg`,
             },
             "Test": {
-                img: `images/test.png`,
+                img: `images/Test.png`,
             },
         },
     },
