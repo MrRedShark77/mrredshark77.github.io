@@ -125,6 +125,9 @@ const FILES = {
             "Black Cat": {
                 img: `https://static.boredpanda.com/blog/wp-content/uploads/2021/08/Meet-MeonJi-the-black-cat-that-is-the-instagram-sensation-6124b05b9ee2a__700.jpg`,
             },
+            "Sharky": {
+                img: `https://d.furaffinity.net/art/cinnatree/1421730243/1421647171.cinnatree_shark_surfer_furaffinity.jpg`,
+            },
             "Test": {
                 img: `images/test.png`,
             },
