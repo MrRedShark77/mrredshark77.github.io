@@ -43,7 +43,20 @@ function loop() {
 
 function loadApp() {
     setupHTML()
+    tmp.el['cmd-div'].setDisplay(false)
     updateMainFilesHTML()
+
+    cmd = document.getElementById('command_input')
+    cmd.addEventListener('keypress', (e) => {
+        if (cmd.style.display != 'none') {
+            if (e.keyCode == 13) {
+                enterCommand()
+                cmd.value = ""
+            }
+        }
+    })
+    cout = document.getElementById('command_outputs')
+
     setTimeout(() => {
         tmp.el.app.setDisplay(true)
     }, 100);

@@ -217,3 +217,49 @@ img {
 .folder-table-div > img {
     max-width: 100%;
 }
+
+#cmd-div {
+    position: absolute;
+    top: 0; left: 0;
+    margin: 110px;
+    padding: 2px;
+    width: calc(100% - 212px);
+    height: calc(100% - 212px);
+    min-height: 600px;
+
+    background-color: #C0C0C0;
+    border: solid 2px;
+    border-color: white #393939 #393939 white;
+
+    z-index: 3;
+}
+
+#cmd-div > .folder-table-div {
+    background-color: black;
+    color: white;
+}
+
+#command_outputs {
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+#command_input {
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    padding: 0;
+    background-color: #0000;
+    border: none;
+    color: white;
+}
+
+#command_outputs > .warning {
+    color: yellow;
+}
+
+#command_outputs > .error {
+    color: red;
+}

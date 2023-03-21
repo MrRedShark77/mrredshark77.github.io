@@ -11,6 +11,7 @@
     <title>MrRedShark77's Homepage</title>
 
     <script src="js/Element.js"></script>
+    <script src="js/command.js"></script>
     <script src="js/folders.js"></script>
     <script src="js/contents.js"></script>
     <script src="js/main.js"></script>
@@ -36,8 +37,17 @@
                 <img id="img-selected">
             </div>
         </div>
+        <div id="cmd-div">
+            <div class="folder-title">
+                <span id="image_title">Command Prompt</span>
+                <button class="btn-primary" onclick="tmp.el['cmd-div'].setDisplay(false)">X</button>
+            </div><div class="folder-table-div">
+                <div id="command_outputs"></div>
+                <input id="command_input" type="text" placeholder="Type Command to Run. (Click here first to type)">
+            </div>
+        </div>
         <div id="navbar-bottom">
-            <div id="time">12:34</div>
+            <div id="time">12:34:56</div>
         </div>
     </div>
 </body>

@@ -122,16 +122,65 @@ const FILES = {
     },
     "Pictures": {
         folder: {
-            "Black Cat": {
-                img: `https://static.boredpanda.com/blog/wp-content/uploads/2021/08/Meet-MeonJi-the-black-cat-that-is-the-instagram-sensation-6124b05b9ee2a__700.jpg`,
+            "Cats": {
+                icon_url: `https://www.iconarchive.com/download/i29422/raindropmemory/harmonia-pastelis/hp-folder-cat.ico`,
+                folder: {
+                    "Angry Black Kitten": {
+                        img: `https://media.istockphoto.com/id/877332938/photo/frightened-black-kitten-standing-in-front-of-white-background.jpg?s=170667a&w=0&k=20&c=Fs-28gHUvtJEkBOrQ1TXZ-8bz46mmAyAivX_l3AmLYI=`,
+                    },
+                    "Black Cat": {
+                        img: `https://static.boredpanda.com/blog/wp-content/uploads/2021/08/Meet-MeonJi-the-black-cat-that-is-the-instagram-sensation-6124b05b9ee2a__700.jpg`,
+                    },
+                    "Cute Cat Giving Thumbs Up": {
+                        img: `https://media.istockphoto.com/id/898220516/photo/cute-cat-giving-thumbs-up.jpg?s=612x612&w=0&k=20&c=iBe6lUXwdZg3SehLqtUOw31aDWcOgNRSd28ybI46sms=`,
+                    },
+                    "Maxwell": {
+                        img: `https://static.planetminecraft.com/files/image/minecraft/texture-pack/2023/619/16473147-maxwell_l.jpg`,
+                    },
+                    "Maxwell 2": {
+                        img: `https://preview.redd.it/r5njan3pu4p91.jpg?width=1037&format=pjpg&auto=webp&v=enabled&s=8be1dab4e1232d526e983c59c629297bcdeb6aae`,
+                    },
+                    "Maxwell 3": {
+                        img: `https://preview.redd.it/movn6i1pu4p91.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=3f417fc25b09d3bab0cbfd043f0341dbedcd0be9`,
+                    },
+                    "4 dabloons": {
+                        img: `https://cdn.vox-cdn.com/uploads/chorus_asset/file/24220015/IMG_6434.jpg`,
+                    },
+                },
             },
-            "Sharky": {
-                img: `https://d.furaffinity.net/art/cinnatree/1421730243/1421647171.cinnatree_shark_surfer_furaffinity.jpg`,
+            "Sharks": {
+                folder: {
+                    "Rainbow Shark": {
+                        img: `https://i.pinimg.com/originals/a9/c2/51/a9c251773c6103b29aca323136a96b51.jpg`,
+                    },
+                    "Sharky": {
+                        img: `https://i.pinimg.com/originals/ab/ac/cd/abaccd1a635ecf1b46e91da515275777.jpg`,
+                    },
+                    "Sharky 2": {
+                        img: `https://i.pinimg.com/originals/37/16/4f/37164fdf207ca11d3ca5f5495a0abf50.jpg`,
+                    },
+                    "Sharky 3": {
+                        img: `https://i.pinimg.com/originals/c8/6b/e6/c86be63ee91c87d2c0bb62be90299721.jpg`,
+                    },
+                    "Sharky 4": {
+                        img: `https://i.pinimg.com/736x/68/0b/3d/680b3df1f0b81b1d78850b9effcffcfd.jpg`,
+                    },
+                    "Sharky 5": {
+                        img: `http://i.imgur.com/9qImCCf.jpg`,
+                    },
+                    "Sharky Selfie": {
+                        img: `https://i.pinimg.com/originals/df/62/c1/df62c186c84111c02309073f4561d795.jpg`,
+                    },
+                },
             },
             "Test": {
                 img: `images/Test.png`,
             },
         },
+    },
+    "Command Prompt": {
+        cmd: true,
+        icon: `command`,
     },
 }
 
@@ -172,8 +221,11 @@ function selectFile(...files) {
         else if (d.link) window.open(d.link)
         else if (opened_image != r && d.img) {
             opened_image = r
-            tmp.el.image_title.setHTML(files[files.length-1])
+            tmp.el.image_title.setHTML(r)
             document.getElementById('img-selected').setAttribute('src',d.img)
+        }
+        else if (d.cmd) {
+            tmp.el['cmd-div'].setDisplay(true)
         }
     }
 
