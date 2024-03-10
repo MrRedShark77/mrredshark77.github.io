@@ -11,9 +11,17 @@ const FILES = {
                         icon_url: `https://mrredshark77.github.io/incremental-mass-rewritten/images/mass.png`,
                         link: `https://mrredshark77.github.io/incremental-mass-rewritten/`,
                     },
+                    "Luck Incremental": {
+                        icon_url: `https://mrredshark77.github.io/Luck-Incremental/icon.png`,
+                        link: `https://mrredshark77.github.io/Luck-Incremental/`,
+                    },
                     "Really Grass Cutting Incremental": {
                         icon_url: `https://mrredshark77.github.io/Really-Grass-Cutting-Incremental/images/grass.png`,
                         link: `https://mrredshark77.github.io/Really-Grass-Cutting-Incremental/`,
+                    },
+                    "Shark Incremental": {
+                        icon_url: `https://mrredshark77.github.io/shark-incremental/textures/shark.png`,
+                        link: `https://mrredshark77.github.io/shark-incremental/`,
                     },
                     "Stone-emental": {
                         icon_url: `https://mrredshark77.github.io/Stonemental/images/stone.png`,
