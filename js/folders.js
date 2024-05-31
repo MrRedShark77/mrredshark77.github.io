@@ -158,9 +158,6 @@ const FILES = {
             },
             "Sharks": {
                 folder: {
-                    "Rainbow Shark": {
-                        img: `https://i.pinimg.com/originals/a9/c2/51/a9c251773c6103b29aca323136a96b51.jpg`,
-                    },
                     "Sharky": {
                         img: `https://i.pinimg.com/originals/ab/ac/cd/abaccd1a635ecf1b46e91da515275777.jpg`,
                     },
