@@ -1,0 +1,9 @@
+"Roborock": {
+    folder: {
+        "Photo 1": { img: `https://i.ibb.co/JWdDX12L/20260504-164607.jpg` },
+        "Photo 2": { img: `https://i.ibb.co/3mQMHRnw/20260322-164525.jpg` },
+        "Photo 3": { img: `https://i.ibb.co/0yvQtgTb/20260830-153749.jpg` },
+        "Photo 4": { img: `https://i.ibb.co/3yPYdWZg/IMG-6653.jpg` },
+        "Photo 5": { img: `https://i.imgur.com/xmgIMh1.jpeg` },
+    },
+},

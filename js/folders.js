@@ -134,7 +134,7 @@ const FILES = {
                 icon_url: `https://www.iconarchive.com/download/i29422/raindropmemory/harmonia-pastelis/hp-folder-cat.ico`,
                 folder: {
                     "Angry Black Kitten": {
-                        img: `https://media.istockphoto.com/id/877332938/photo/frightened-black-kitten-standing-in-front-of-white-background.jpg?s=170667a&w=0&k=20&c=Fs-28gHUvtJEkBOrQ1TXZ-8bz46mmAyAivX_l3AmLYI=`,
+                        img: `https://media.istockphoto.com/id/877332938/photo/frightened-black-kitten-standing-in-front-of-white-background.jpg?s=170667a&w=0&k=20&c=Fs-28gHUvtJEkBOrQ1TXZ-8bz46mm[...]
                     },
                     "Black Cat": {
                         img: `https://static.boredpanda.com/blog/wp-content/uploads/2021/08/Meet-MeonJi-the-black-cat-that-is-the-instagram-sensation-6124b05b9ee2a__700.jpg`,
@@ -175,6 +175,25 @@ const FILES = {
                     },
                     "Sharky Selfie": {
                         img: `https://i.pinimg.com/originals/df/62/c1/df62c186c84111c02309073f4561d795.jpg`,
+                    },
+                },
+            },
+            "Roborock": {
+                folder: {
+                    "Photo 1": {
+                        img: `https://i.ibb.co/JWdDX12L/20260504-164607.jpg`,
+                    },
+                    "Photo 2": {
+                        img: `https://i.imgur.com/b033DQB.jpeg`,
+                    },
+                    "Photo 3": {
+                        img: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqbw3yU6PW974nRsbFrbiDr8CPz6niGYcSxT71xSF6QCNgY1c89DZJLtc&s=10`,
+                    },
+                    "Photo 4": {
+                        img: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsET_FbA_-WrU1H4NdmiEBEpKt_nrGZFl82PJm_tteUM5s6VtMw0YFkO8&s=10`,
+                    },
+                    "Photo 5": {
+                        img: `https://i.imgur.com/xmgIMh1.jpeg`,
                     },
                 },
             },

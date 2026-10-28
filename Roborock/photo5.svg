@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="bg5" x1="0" x2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg5)"/>
+  <rect x="150" y="130" width="600" height="340" rx="40" fill="#ede9fe" opacity="0.12"/>
+  <path d="M230 390 C320 180, 570 170, 680 390" fill="none" stroke="#ddd6fe" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="450" cy="220" r="80" fill="#c4b5fd" opacity="0.75"/>
+  <text x="450" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" fill="#f5f3ff" font-weight="700">ROBOROCK</text>
+  <text x="450" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#e9d5ff">Photo 5</text>
+</svg>

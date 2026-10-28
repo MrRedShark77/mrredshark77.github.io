@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="bg4" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg4)"/>
+  <circle cx="245" cy="210" r="120" fill="#fecaca" opacity="0.75"/>
+  <circle cx="650" cy="220" r="150" fill="#fca5a5" opacity="0.7"/>
+  <rect x="200" y="360" width="500" height="90" rx="20" fill="#fee2e2" opacity="0.15"/>
+  <text x="450" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" fill="#fff1f2" font-weight="700">ROBOROCK</text>
+  <text x="450" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#ffe4e6">Photo 4</text>
+</svg>
