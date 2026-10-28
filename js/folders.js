@@ -178,6 +178,28 @@ const FILES = {
                     },
                 },
             },
+                        "Everyday Rewards": {
+                folder: {
+                    "Everyday Rewards": {
+                        img: `https://i.ibb.co/Lz1z0cxs/1791487694068.jpg`,
+                    },
+                    "Everyday Rewards 2": {
+                        img: `https://i.ibb.co/Lhgrw31f/1791487641578.jpg`,
+                    },
+                    "Everyday Rewards 3": {
+                        img: `https://i.ibb.co/XZcn8fM0/1791487463534.jpg`,
+                    },
+                    "Everyday Rewards 4": {
+                        img: `https://i.ibb.co/mCbjrsLt/1791487369148.jpg`,
+                    },
+                    "Everyday Rewards 5": {
+                        img: `https://i.ibb.co/v6j74j0c/1791487346563.jpg`,
+                    },
+                    "Everyday Rewards 6": {
+                        img: `https://i.ibb.co/pjPhdWBR/pexels-mitchell-landow-2164064156-39420251.jpg`,
+                    },
+                },
+            },
             "Test": {
                 img: `images/Test.png`,
             },
